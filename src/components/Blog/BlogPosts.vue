@@ -4,7 +4,10 @@
 
     <h3 class="post-title">{{title | reversing}}</h3>
     <span class="post-date">{{date}}</span>
-    <p class="post-content">{{content}}</p>
+    <!--<p class="post-content">{{content | shorten}}</p>-->
+    <!--<p class="post-content">{{content | shorten(10)}}</p>-->
+    <!-- <p class="post-content">{{content | shorten(10,'More') }}</p>  -->
+    <p class="post-content">{{content | shorten(10,'More')  | reversing}}</p> 
 
     <div class="row">
       <div class="col-sm-6">
@@ -12,7 +15,8 @@
       </div>
 
       <div class="col-sm-6 text-right">
-        <span class="post-category">{{category | upperCase}}</span>
+        <!-- <span class="post-category">{{category | upperCase}}</span> -->
+        <span class="post-category">{{category}}</span>
       </div> 
     </div>
   </div>
