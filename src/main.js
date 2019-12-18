@@ -11,23 +11,11 @@ import './scss/main.scss';
 import 'normalize.css';
 
 import "./filters"; //Global Filters
+import "./directives"; //Global Custome directives
 
 Vue.config.productionTip = false;
 
-//Make Bold Custom Directive
-// Vue.directive('bold',{
-//     bind: function(el){
-//         el.style.fontWeight = "bold";
-//     }  
-// });
 
-
-//Make Dynamic Font Size Custom Directive
-Vue.directive('font',{
-    bind: function(el, binding){
-        el.style.fontSize = binding.value + 'px';
-    }  
-});
 
 new Vue({
     router,
